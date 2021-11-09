@@ -1,0 +1,77 @@
+{
+    "t3-addMockNode": {
+        "prefix": "t3-addMockNode",
+        "body": [
+            "addMockNode(xxx, yyy, zzz, scene)"
+        ],
+        "description": "添加mock节点"
+    },
+    "t3-trackBall": {
+        "prefix": "t3-trackBall",
+        "body": [
+            "// 控制照相机",
+            "var trackballControls = initTrackballControls(camera, renderer);",
+            "var clock = new THREE.Clock();",
+            "",
+            "trackballControls.update(clock.getDelta()); // 控制照相机的视角"
+        ],
+        "description": "轨迹球"
+    },
+    "t3-trackBall-full": {
+        "prefix": "t3-trackBall-full",
+        "body": [
+            "// 控制照相机",
+            "var trackballControls = initTrackballControls(camera, renderer);",
+            "var clock = new THREE.Clock();",
+            "",
+            "render();",
+            "",
+            "function render() {",
+            "    trackballControls.update(clock.getDelta()); // 控制照相机的视角",
+            "}"
+        ],
+        "description": "轨迹球"
+    },
+    "t3-axes": {
+        "prefix": "t3-axes",
+        "body": [
+            "const axesHelper = new THREE.AxesHelper( 500 );",
+            "scene.add( axesHelper );"
+        ],
+        "description": "坐标轴"
+    },
+    "t3-light-ambient": {
+        "prefix": "t3-light-ambient",
+        "body": [
+            "const ambientLight = new THREE.AmbientLight( 0x404040 ); // soft white light",
+            "scene.add( ambientLight );"
+        ],
+        "description": "环境光"
+    },
+    "t3-light-SpotLightHelper": {
+        "prefix": "t3-light-SpotLightHelper",
+        "body": [
+            "const spotLightHelper = new THREE.SpotLightHelper( spotLight );",
+            "scene.add( spotLightHelper );",
+            "",
+            "function render() {",
+            "    spotLightHelper.update()",
+            "}"
+        ],
+        "description": "聚光灯辅助线"
+    },
+    "t3-get-name": {
+        "prefix": "t3-get-name",
+        "body": [
+            "debugScene.getObjectByName('meshName')",
+            "",
+            "http://localhost:8080/docs/?q=Scene#api/zh/core/Object3D",
+            ".getObjectByName ( name : String ) : Object3D",
+            "name —— 用于来匹配子物体中Object3D.name属性的字符串。",
+            "",
+            "从该对象开始，搜索一个对象及其子级，返回第一个带有匹配name的子对象。",
+            "请注意，大多数的对象中name默认是一个空字符串，要使用这个方法，你将需要手动地设置name属性。"
+        ],
+        "description": "获取匹配name的子对象"
+    }
+}
