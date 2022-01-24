@@ -1,8 +1,8 @@
 {
 	"name": "vscode-snippet-threejs",
-	"displayName": "threejs common snippet",
+	"displayName": "snippet threejs",
 	"description": "threejs常用代码片段",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "haohailiang",
 	"author": {
         "name": "haohailiang",
